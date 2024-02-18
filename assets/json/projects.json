@@ -1,0 +1,33 @@
+
+[
+    {
+        "title" : "Go Green",
+        "image" : "assets/img/projects/gogreen.jpg",
+        "description": "A task based game to improve the world",
+        "sourceLink": "https://github.com/SP-XD/Go-green/tree/beta/go_green"
+    },
+    {
+        "title" : "Fistagram",
+        "image" : "assets/img/projects/fistagram.jpg",
+        "description" : "An instagram clone based on my own UI design.",
+        "sourceLink": "https://github.com/sp-xd/fistagram"
+    },
+    {
+        "title": "Portfolio",
+        "image" : "assets/img/projects/portfolio.jpg",
+        "description": "My personal portfolio built using html, css & javascript.",
+        "sourceLink": "https//somnathpaul.in"
+    },
+    {
+        "title": "Custom Roms & kernels",
+        "image" : "assets/img/projects/custom_rom.jpg",
+        "description": "Collection of Custom roms & Kernels I have maintained",
+        "sourceLink": "https://forum.xda-developers.com/m/sp-xd.8915320/#recent-content"
+    },
+    {
+        "title": "Youtube Data Analysis",
+        "image" : "assets/img/projects/youtube_data_analysis.jpg",
+        "description": "Exploratory data analysis of trending youtube videos",
+        "sourceLink": "https://jovian.ai/somnatypaul007/trending-youtube-videos-analysis"
+    }
+] 
