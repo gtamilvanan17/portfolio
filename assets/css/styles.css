@@ -937,13 +937,22 @@ img {
 }
 
 .read_more_button {
-  color: var(--first-color);
+  color: #fff;
   /* position: absolute; */
   /* left: 40%; */
   /* bottom: 15px;  */
   /* top: 45%; */
   /* right: 10%; */
-  border-radius: 0.35rem;
+  border-radius: 1rem;
+  background-color: #137bd1;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 /*---------------- SERVICES ----------------*/

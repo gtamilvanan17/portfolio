@@ -1,33 +1,33 @@
 
 [
     {
-        "title" : "Go Green",
-        "image" : "assets/img/projects/gogreen.jpg",
-        "description": "A task based game to improve the world",
-        "sourceLink": "https://github.com/SP-XD/Go-green/tree/beta/go_green"
+        "title" : "Server Details",
+        "image" : "assets/img/projects/server.gif",
+        "description": "A web based server-client details retriver.",
+        "sourceLink": "https://gtamilvanan17.github.io/client-server/"
     },
     {
-        "title" : "Fistagram",
-        "image" : "assets/img/projects/fistagram.jpg",
-        "description" : "An instagram clone based on my own UI design.",
-        "sourceLink": "https://github.com/sp-xd/fistagram"
+        "title" : "Pass Generator",
+        "image" : "assets/img/projects/passgen.gif",
+        "description" : "A React JS based password generator.",
+        "sourceLink": "https://gtamilvanan17.github.io/passgen/"
     },
     {
-        "title": "Portfolio",
-        "image" : "assets/img/projects/portfolio.jpg",
-        "description": "My personal portfolio built using html, css & javascript.",
-        "sourceLink": "https//somnathpaul.in"
+        "title": "All web index",
+        "image" : "assets/img/projects/index.gif",
+        "description": "A index for all of my github pages.",
+        "sourceLink": "https://gtamilvanan17.github.io/index/"
     },
     {
-        "title": "Custom Roms & kernels",
-        "image" : "assets/img/projects/custom_rom.jpg",
-        "description": "Collection of Custom roms & Kernels I have maintained",
-        "sourceLink": "https://forum.xda-developers.com/m/sp-xd.8915320/#recent-content"
+        "title": "CHMOD Calcy",
+        "image" : "assets/img/projects/chmod.gif",
+        "description": "Chmod Calculator for linux.",
+        "sourceLink": "https://gtamilvanan17.github.io/chmod/"
     },
     {
-        "title": "Youtube Data Analysis",
-        "image" : "assets/img/projects/youtube_data_analysis.jpg",
-        "description": "Exploratory data analysis of trending youtube videos",
-        "sourceLink": "https://jovian.ai/somnatypaul007/trending-youtube-videos-analysis"
+        "title": "HTTP ERROR",
+        "image" : "assets/img/projects/httperror.gif",
+        "description": "A database for http error codes.",
+        "sourceLink": "https://gtamilvanan17.github.io/http-error/"
     }
 ] 
