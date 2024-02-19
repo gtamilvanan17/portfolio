@@ -167,12 +167,6 @@ async function fetchMediumBlogs(username) {
   return response.json();
 }
 
-// Function to extract plain text content without HTML tags
-function extractPlainText(html) {
-  const doc = new DOMParser().parseFromString(html, 'text/html');
-  return doc.body.textContent || "";
-}
-
 // Username for Medium (replace with the desired username)
 const mediumUsername = 'cdops_official';
 
@@ -199,34 +193,105 @@ fetchMediumBlogs(mediumUsername).then((result) => {
     title_link.innerText = article.title;
     title.appendChild(title_link);
 
-    let brief = document.createElement("p");
-    brief.classList.add("blog_brief");
-    brief.innerText = extractPlainText(article.description); // Extract plain text without HTML tags
-
-    let read_more_link = document.createElement("a");
-    read_more_link.target = "_blank";
-    read_more_link.href = article_link;
-    read_more_link.classList.add("read_more_button");
-    read_more_link.innerHTML = `Read more <i class="uil uil-external-link-alt"></i>`;
-
     let pubDate = new Date(Date.parse(article.pubDate));
     let options = { day: "numeric", month: "long", year: "numeric" };
     let date_added = document.createElement("span");
+    date_added.classList.add("blog_date"); // Apply existing styles
     date_added.innerHTML = `<i class="uil uil-calender"></i> ${pubDate.toLocaleString("en-US", options)}`;
 
-    let meta_data = document.createElement("span");
+    let read_more_link = document.createElement("a");
+    read_more_link.target = "_blank";
+    read_more_link.href = article.link;
+    read_more_link.classList.add("read_more_button");
+    read_more_link.innerHTML = `Read more <i class="uil uil-external-link-alt"></i>`;
+
+    let meta_data = document.createElement("div");
     meta_data.appendChild(date_added);
 
-    brief.appendChild(read_more_link);
+    let read_more_container = document.createElement("div");
+    read_more_container.appendChild(read_more_link);
+
     blog_content.appendChild(title);
     blog_content.appendChild(meta_data);
-    blog_content.appendChild(brief);
+    blog_content.appendChild(read_more_container);
     blog_item.appendChild(blog_content);
     container.appendChild(blog_item);
   });
 
   document.querySelector(".blogs_container").appendChild(container);
 });
+
+
+
+
+
+// // Function to fetch Medium blogs using RSS feed
+// async function fetchMediumBlogs(username) {
+//   const rssFeedUrl = `https://medium.com/feed/@${username}`;
+//   const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssFeedUrl)}`);
+//   return response.json();
+// }
+
+// // Function to extract plain text content without HTML tags
+// function extractPlainText(html) {
+//   const doc = new DOMParser().parseFromString(html, 'text/html');
+//   return doc.body.textContent || "";
+// }
+
+// // Username for Medium (replace with the desired username)
+// const mediumUsername = 'cdops_official';
+
+// // Fetch Medium blogs and inject into the DOM
+// fetchMediumBlogs(mediumUsername).then((result) => {
+//   const articles = result.items; // Assuming 'items' contains the blog posts in the response
+//   let container = document.createElement("div");
+//   container.classList.add("blog_items");
+
+//   articles.forEach((article) => {
+//     let blog_item = document.createElement("div");
+//     blog_item.classList.add("blog_item", "card");
+
+//     let blog_content = document.createElement("div");
+//     blog_content.classList.add("blog_content");
+
+//     let article_link = article.link;
+
+//     let title = document.createElement("h3");
+//     title.classList.add("blog_title");
+//     let title_link = document.createElement("a");
+//     title_link.target = "_blank";
+//     title_link.href = article_link;
+//     title_link.innerText = article.title;
+//     title.appendChild(title_link);
+
+//     let brief = document.createElement("p");
+//     brief.classList.add("blog_brief");
+//     brief.innerText = extractPlainText(article.description); // Extract plain text without HTML tags
+
+//     let read_more_link = document.createElement("a");
+//     read_more_link.target = "_blank";
+//     read_more_link.href = article_link;
+//     read_more_link.classList.add("read_more_button");
+//     read_more_link.innerHTML = `Read more <i class="uil uil-external-link-alt"></i>`;
+
+//     let pubDate = new Date(Date.parse(article.pubDate));
+//     let options = { day: "numeric", month: "long", year: "numeric" };
+//     let date_added = document.createElement("span");
+//     date_added.innerHTML = `<i class="uil uil-calender"></i> ${pubDate.toLocaleString("en-US", options)}`;
+
+//     let meta_data = document.createElement("span");
+//     meta_data.appendChild(date_added);
+
+//     brief.appendChild(read_more_link);
+//     blog_content.appendChild(title);
+//     blog_content.appendChild(meta_data);
+//     blog_content.appendChild(brief);
+//     blog_item.appendChild(blog_content);
+//     container.appendChild(blog_item);
+//   });
+
+//   document.querySelector(".blogs_container").appendChild(container);
+// });
 
 
 
