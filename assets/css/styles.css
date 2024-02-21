@@ -283,7 +283,7 @@ img {
 .card {
   background-color: var(--card-bg);
   padding: 0;
-  border-radius: 0.5rem;
+  border-radius: 1.3rem;
   overflow: hidden;
   transition: 0.3s;
 }
@@ -959,8 +959,19 @@ img {
 .services_container {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
 }
-
+.services_buttons {
+  color: #ffffff ;
+  font-size: 15px ;
+  padding: 0.5rem 0.7rem 0.8rem 0.7rem
+}
+.services_buttons-icon {
+  color: var(--first-color);
+  margin-right: var(--mb-0-5);
+}
 /*---------------- PORTFOLIO ----------------*/
 
 /*---------------- PROJECT IN MIND ----------------*/
