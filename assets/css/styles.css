@@ -572,7 +572,7 @@ img {
 }
 
 .home_blob-img {
-  width: 300px;
+  width: 245px;
 }
 
 .home_data {
@@ -967,11 +967,18 @@ img {
   /* color: #ffffff ; */
   font-weight: bolder;
   font-size: 15px ;
-  padding: 0.4rem 0.9rem 0.6rem 0.6rem ;
+  padding: 0.4rem 0.7rem 0.5rem 0.9rem ;
 }
 .services_buttons-icon {
   color: var(--first-color);
   margin-right: var(--mb-0-5);
+}
+.service_container {
+  max-width: 570px;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 /*---------------- PORTFOLIO ----------------*/
 
@@ -1197,6 +1204,7 @@ img {
 
   .about_container,
   .contact_container,
+  .service_container,
   .footer_container {
     grid-template-columns: repeat(2, 1fr);
   }
