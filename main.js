@@ -232,7 +232,7 @@ fetchMediumBlogs(mediumUsername).then((result) => {
     container.appendChild(blog_item);
   });
 
-  // document.querySelector(".blogs_container").appendChild(container);
+  document.querySelector(".blogs_container").appendChild(container);
 });
 
 
