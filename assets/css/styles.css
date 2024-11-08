@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap");
 
 * {
-  cursor: url('cu.png'), auto;
+  cursor: url('cursor.png'), auto;
 }
 :root {
   --header-height: 3rem;
