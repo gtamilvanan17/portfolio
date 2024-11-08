@@ -1,0 +1,39 @@
+
+[
+    {
+        "title" : "Github CICD",
+        "image" : "assets/img/projects/github-actions.png",
+        "description": "A github actions based CICD setup.",
+        "sourceLink": "https://gtamilvanan17.github.io/To-do-App/"
+    },
+    {
+        "title" : "Server Details",
+        "image" : "assets/img/projects/server.png",
+        "description": "A web based server-client details retriver.",
+        "sourceLink": "https://gtamilvanan17.github.io/client-server/"
+    },
+    {
+        "title" : "Pass Generator",
+        "image" : "assets/img/projects/passgen.png",
+        "description" : "A React JS based password generator.",
+        "sourceLink": "https://gtamilvanan17.github.io/passgen/"
+    },
+    {
+        "title": "All web index",
+        "image" : "assets/img/projects/index.png",
+        "description": "A index for all of my github pages.",
+        "sourceLink": "https://gtamilvanan17.github.io/index/"
+    },
+    {
+        "title": "CHMOD Calcy",
+        "image" : "assets/img/projects/chmod.png",
+        "description": "Chmod Calculator for linux.",
+        "sourceLink": "https://gtamilvanan17.github.io/chmod/"
+    },
+    {
+        "title": "HTTP ERROR",
+        "image" : "assets/img/projects/httperror.png",
+        "description": "A database for http error codes.",
+        "sourceLink": "https://gtamilvanan17.github.io/http-error/"
+    }
+] 
