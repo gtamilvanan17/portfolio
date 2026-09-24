@@ -1,5 +1,7 @@
-import { Reveal } from '../components/Reveal'
-import { achievements, education } from '../data'
+import { motion } from 'framer-motion'
+import { Reveal, staggerContainer, staggerItem } from '../components/Reveal'
+import Badge from '../components/Badge'
+import { achievementBadges, achievements, certificationBadges, education } from '../data'
 
 export default function Achievements() {
   return (
@@ -38,8 +40,46 @@ export default function Achievements() {
           ))}
         </div>
 
+        <Reveal delay={0.2}>
+          <h3 className="mb-6 mt-16 text-center font-display text-xs uppercase tracking-[0.3em] text-[#00f0ff]">
+            Achievement Badges
+          </h3>
+        </Reveal>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+          className="flex flex-wrap justify-center gap-x-6 gap-y-8"
+        >
+          {achievementBadges.map((badge) => (
+            <motion.div key={badge.label} variants={staggerItem}>
+              <Badge icon={badge.icon} label={badge.label} subtitle={badge.subtitle} />
+            </motion.div>
+          ))}
+        </motion.div>
+
+        <Reveal delay={0.2}>
+          <h3 className="mb-6 mt-16 text-center font-display text-xs uppercase tracking-[0.3em] text-[#22ff88]">
+            Certification Badges
+          </h3>
+        </Reveal>
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+          className="flex flex-wrap justify-center gap-x-6 gap-y-8"
+        >
+          {certificationBadges.map((badge) => (
+            <motion.div key={badge.label} variants={staggerItem}>
+              <Badge icon={badge.icon} label={badge.label} />
+            </motion.div>
+          ))}
+        </motion.div>
+
         <Reveal delay={0.3}>
-          <div className="mt-8 glass glass-hover rounded-2xl p-6">
+          <div className="mt-16 glass glass-hover rounded-2xl p-6">
             <div className="flex items-start gap-4">
               <span className="text-3xl">🎓</span>
               <div>

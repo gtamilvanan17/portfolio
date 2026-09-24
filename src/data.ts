@@ -166,6 +166,19 @@ export const achievements = [
   },
 ]
 
+export const achievementBadges = [
+  { icon: '🟩', label: 'Hack The Box' },
+  { icon: '🥷', label: 'SNA Labs', subtitle: 'Selfmade Ninja Labs' },
+  { icon: '💻', label: 'HackerRank' },
+  { icon: '☁️', label: 'Google Cloud Skills Boost' },
+  { icon: '🔷', label: 'Microsoft Azure', subtitle: 'Profile' },
+]
+
+export const certificationBadges = [
+  { icon: '🔷', label: 'Azure' },
+  { icon: '🎩', label: 'Red Hat' },
+]
+
 export const education = {
   degree: 'Bachelor of Engineering – Computer Science',
   school: 'KPR Institute of Engineering and Technology',
